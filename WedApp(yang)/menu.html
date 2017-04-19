@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*
+			{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.menu
+			{
+				position: relative;
+			}
+			.menu li  /*每项菜单的样式*/
+			{
+				width: 100px;
+				height: 36px;
+				line-height: 36px;
+				background: #99CCFF;
+				text-align: center;
+			}
+			.menu ul  /*让子菜单隐藏*/
+			{
+				display: none; 
+				position: absolute;
+			}
+			.menu li:hover ul
+			{
+				display: block;
+			}
+			.menu li a
+			{
+				text-decoration: none;
+				color: white;
+			}
+			
+			.menu >li    /*让子级li都浮动，横排*/
+			{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li>
+			<a href="#">在线留言</a>
+			   <ul>
+                       <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                </ul>
+			</li>
+			
+			<li>
+			<a href="#">产品展示</a>
+			   <ul>
+                      <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                </ul>
+			</li>
+			
+			<li>
+			<a href="#">在线联系</a>
+			   <ul>
+                      <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                       <li><a href="#">版权声明</a></li>
+                </ul>
+			</li>
+			
+			<li>
+			<a href="#">主界面</a>
+			   <ul>
+                      <li><a href="#">版权声明</a></li>
+                      <li><a href="#">版权声明</a></li>
+                      <li><a href="#">版权声明</a></li>
+                </ul>
+			</li>
+			
+		</ul>
+	</body>
+</html>

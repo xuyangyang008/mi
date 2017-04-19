@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			
+		}
+		#Logo
+		{		
+			position: absolute;				
+			width:1002px;
+			height:130px;
+			left: 200px;	
+			font-size: 13px;
+			color: white;
+			background:url(Images/hbg.jpg) ;								
+		}
+		#Logo div
+		{
+			position: absolute;
+			left: 700px;
+			top:30px						
+		}
+        #title
+       {
+        position:absolute;
+        top:90px;
+        left: 200px;
+	    width:1002px;
+		height:50px;				
+		background:#338300;
+       }	
+       #leftmenu
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 220px;
+       	 width: 25px;
+       	 height: 49px;
+       	 background:url(Images/menuleft.jpg) ;
+       	 z-index: 1;
+       }	
+        #rigthmenu
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 1160px;
+       	 width: 25px;
+       	 height: 49px;
+       	 background:url(Images/menuright.jpg) ;
+       	 z-index: 1;
+       }	
+        #menuMain
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 245px;
+       	 width: 915px;
+       	 height: 49px;
+       	 background:url(Images/menubg.jpg) ;
+       	 z-index: 1;
+       }	
+       #menutitle
+		{
+		
+		 z-index: 2;
+		 position: absolute;
+		 top: 80px;
+		 left:446px;
+		 width: 813px;
+		 height: 40px;
+		
+		 /*background: red;*/
+		}	
+		
+		 #menutitle a
+		 {
+			 text-decoration: none;
+			 background: url(Images/menu.jpg) no-repeat;
+			 width: 96px;
+			 height: 40px;
+			font-size: 13px;
+			 text-align: center;
+			 display:inline-block;
+			 line-height: 44px;
+			 color: white;			 	
+		 }
+		 
+		 #menutitle a:hover
+		 {
+		 	background-image: url(Images/menunow.jpg);
+		 }
+		 
+	#adv
+	{
+		position: absolute;
+		width:1002px ;
+		height: 200px;
+		left: 200px;
+		top:143px ;
+	}	
+	
+	       /*身体*/	
+	       /*产品分类*/
+	      #leftproduct
+	      {
+	      	position: absolute;
+	      	width: 250px;
+	      	height: 207px;
+	      	left: 200px;
+	      	top:343px;
+	      	background: url(Images/about.jpg)no-repeat,url(Images/mbg.jpg)repeat-y;	      	
+	      }
+	       /*产品信息*/
+	      #lertpocinfo
+	      {
+	      	position: absolute;	      	
+	      	width: 128px;
+	      	height:20px;
+	      	top: 60px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	      #lertpocinfo2
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 90px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	       #lertpocinfo3
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 125px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	         #lertpocinfo4
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 155px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	       #leftproduct a
+	       {	       	 
+	       	position: absolute;
+	       	left: 23px;
+	       	font-size: 13px;
+	       	font-weight: 600;
+	       	text-decoration: none;
+	       	color: black;
+	       }
+	     	     
+	      
+	      /*联系我们*/
+	      #leftcontact
+	      {
+	      	position: absolute;
+	      	width: 250px;
+	      	height: 259px;
+	      	left: 200px;
+	      	top:550px ;
+	      	background: url(Images/contact.jpg)no-repeat,url(Images/mbg.jpg)repeat-y;
+	      }
+	       /*联系内容*/
+	      #contxt
+	      {
+	      	z-index: 2;
+	      	position: absolute;	 
+	      	width:180px ;
+	      	height: 230px;     	
+	      	left: 10px;
+	      	top:60px;	      	
+	      }
+	      #contxt p
+	      {
+	      	font-size: 15px;
+	      	font-weight: 600;
+	      }
+	      
+	      /*填充*/
+	    #leftbck
+	    {
+	    	position: absolute;
+	    	width: 250px;
+	    	height: 600px;
+	    	left: 200px;
+	    	top: 809px;
+	    	/*background: #43A500;	*/	    
+	    	background: url(Images/mbg.jpg)repeat-y;	
+	    }
+	    /*身体(中：上)*/
+	    #topMain
+	    {
+	    	position: absolute;
+	    	top: 344px;
+	    	left: 435px;
+	    	/*width:767px;*/
+	    	/*height: 250px;*/
+	    	/*background: red;*/
+	    	/*background: #43A500;*/
+	    }	
+	     /*身体(中：您现在的位置)*/  
+	    #newposition 
+	    {
+	    	position: absolute;
+	    	width: 20px;
+	    	height: 26px;
+	    	top: 23px;
+	    	left: 10px;
+	    	background: url(Images/listtitle.jpg);	    	
+	    }
+	     /*身体(中：文字)*/ 
+	    #Text
+	    {
+	    	position: absolute;
+	    	width: 739px;
+	    	height: 25px;
+	    	left: 35px;
+	    	font-size: 14px;
+	    	top: 25px;
+	    	text-decoration: none;
+	    }
+	    /*身体(中：下划线)*/ 
+	  #btmline
+	  {
+	  	position: absolute;
+	  	width: 757px;
+	  	height: 2px;
+	  	left:10px ;
+	  	top: 60px;
+	  	background: url(Images/btmline.jpg);
+	  }
+	  	  
+	  
+	   /*身体(中：图片1)*/ 
+	  #tabdiv
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 70px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	  	text-align: center;
+	  	
+	  		  	
+	  }
+	  #tabdiv span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	  
+	    /*身体(中：图片2)*/ 
+	  #tabdiv2
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 230px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	  	text-align: center;
+	  	
+	  		  	
+	  }
+	  #tabdiv2 span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter2
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter2 a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	   /*身体(中：图片3)*/ 
+	  #tabdiv3
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 390px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	  	text-align: center;
+	  	
+	  		  	
+	  }
+	  #tabdiv3 span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter3
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter3 a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	     /*身体(中：图片4)*/ 
+	  #tabdiv4
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 550px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	  	text-align: center;
+	  		  		  	
+	  }
+	  #tabdiv4 span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter4
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter4 a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	    /*身体(中：图片5)*/ 
+	  #tabdiv5
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 710px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	  	text-align: center;
+	  		  		  	
+	  }
+	  #tabdiv5 span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter5
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter5 a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	  
+	   /*身体(中：图片6)*/ 
+	  #tabdiv6
+	  {
+	  	position: absolute;
+	  	width: 750px;
+	  	height: 130px;
+	  	top: 870px;
+	   /* background: saddlebrown;*/
+	  	padding: 20px;  
+	    left: 60px;
+	  		  		  	
+	  }
+	  #tabdiv6 span img
+	  {	  	
+	  	border: 1px solid #B0B0B0;
+	  	padding: 6px;
+	  }
+	 
+	  /*对应图片下的字幕*/
+	  #divcenter6
+	  {
+	  	position: absolute;
+	  	height: 30px;
+	  	top: 150px;
+	  	left: 28px;
+	  	width: 740px;
+	  	/*background: #333333;*/
+	  }
+	  #divcenter6 a
+	  {  
+	    padding-left: 5px;
+	  	width: 150px;
+	  	display: inline-block;
+	    /*border: 1px solid saddlebrown;*/
+	  	font-size: 16px;
+	  	text-decoration: none;
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  	     	   	  
+	/*脚*/
+	#fool
+	{
+		position: absolute;
+		width: 1002px;
+		height: 93px;
+		left: 200px;
+		top: 1410px;
+		background:url(Images/footer.jpg);
+	}
+	#toptxt
+	{
+		position: absolute;
+		left: 200px;
+		top: 50px;
+		color: white;
+		font-size: 14px;
+		font-weight: 400;
+	}		
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="Logo">
+			<div>
+				<img src="Images/home.jpg">设为首页
+				<img src="Images/bookmark.jpg">加入收藏
+				<img src="Images/mail.jpg">联系我们
+			</div>		
+		</div>		
+		<div id="title"></div>
+		<div id="leftmenu"></div>
+		<div id="rigthmenu"></div>
+		<div id="menuMain"></div>
+		
+		<div id="menutitle">
+				<a href='index.html'>网站首页</a>
+				<a href='articleList/15.html'>公司简介</a>
+				<a href='productList/11.html'>产品展示</a>
+				<a href='articleList/17.html'>养殖技术</a>
+				<a href='articleList/18.html'>娃娃鱼介绍</a>
+				<a href='productList/18.html'>企业资质</a>
+				<a href='productList/19.html'>友情链接</a>
+		</div>
+		
+		<div id="adv">
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1002" height="193"  >
+          <param name="movie" value="Scripts/flashbcastr.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="" />
+          <param name="swfversion" value="8.0.35.0" />
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+          <param name="transparent" value="" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="Scripts/flashbcastr.swf" width="1002" height="200">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="" />
+            <param name="swfversion" value="8.0.35.0" />
+            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+            <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+            <param name="transparent" value="transparent" />
+            <div>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="��ȡ Adobe Flash Player" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object>
+  </div>
+		
+		<!--身体-->
+	<div id="Main">
+		<!--产品分类-->
+		<div id="leftproduct">
+			<div id="lertpocinfo">
+				<a href="#">成品大鲵</a>
+			</div>
+			<div id="lertpocinfo2">
+				<a href="#">鲵苗</a>
+			</div>
+			<div id="lertpocinfo3">
+				<a href="#">幼鲵</a>
+			</div>
+			<div id="lertpocinfo4">
+				<a href="#">种鲵</a>
+			</div>
+		</div>
+		
+		
+		<!--联系-->
+		<div id="leftcontact">
+			<div id="contxt">
+				<p>地址：湖南省望城区茶亭镇洪开桥剑龙娃娃鱼养殖基地</p>
+                <p>电话：0731-88245889</p>
+                <p> 手机：13907486476 (谭先生)</p>
+                <p> 13808415437 (雷先生)</p>          
+                <p>QQ：1605461952</p>
+                <p>邮编：410203</p>
+                <p>邮箱：jlwwyu@163.com</p>                                   
+			</div>
+		</div>
+		<div id="leftbck"></div>
+		
+		
+		<!--身体（中）-->
+		<div id="topMain">
+		<!--身体（中：您现在的位置）-->	
+		<div id="newposition"></div>
+		<!--身体（中：文字）-->	
+		<div id="Text">
+			<span>您现在的位置：<a href="#">首页</a>><a href="#">产品展示</a></span>
+		</div>
+		<!--身体（中：下划线）-->	
+		<div id="btmline"></div>
+		<!--身体（中：图片1）-->	
+		<div id="tabdiv">
+			<span><img src="ProjectDemo/s7436691616.jpg"  /></span>
+			<span><img src="ProjectDemo/s1290749840.jpg"  /></span>
+			<span><img src="ProjectDemo/s8256612394.jpg"  /></span>
+			<span><img src="ProjectDemo/s8333484241.jpg"  /></span>
+			<!--对应图片下的字幕-->
+			<div id="divcenter">
+				<a>成品大鲵1</a>
+				<a>成品大鲵2</a>
+				<a>成品大鲵3</a>
+				<a>成品大鲵4</a>
+			</div>
+		</div>
+		
+		<!--身体（中：图片2）-->	
+		<div id="tabdiv2">
+			<span><img src="ProjectDemo/s9249139854.jpg"  /></span>
+			<span><img src="ProjectDemo/s8819432416.jpg"  /></span>
+			<span><img src="ProjectDemo/s8517655948.jpg"  /></span>
+			<span><img src="ProjectDemo/s8333484241.jpg"  /></span>
+			<!--对应图片下的字幕-->
+			<div id="divcenter2">
+				<a>成品大鲵5</a>
+				<a>成品大鲵6</a>
+				<a>鲵苗1</a>
+				<a>鲵苗2</a>
+			</div>
+		</div>
+		
+		<!--身体（中：图片3）-->	
+		<div id="tabdiv3">
+			<span><img src="ProjectDemo/s8256612394.jpg"  /></span>
+			<span><img src="ProjectDemo/s7436691616.jpg"  /></span>
+			<span><img src="ProjectDemo/s6838433683.jpg"  /></span>
+			<span><img src="ProjectDemo/s5765746047.jpg"  /></span>
+			<!--对应图片下的字幕-->
+			<div id="divcenter3">
+				<a>鲵苗3</a>
+				<a>鲵苗4</a>
+				<a>鲵苗5</a>
+				<a>鲵苗6</a>
+			</div>
+		</div>
+		
+		<!--身体（中：图片4）-->	
+		<div id="tabdiv4">
+			<span><img src="ProjectDemo/s4783147381.jpg"  /></span>
+			<span><img src="ProjectDemo/s4602856253.jpg"  /></span>
+			<span><img src="ProjectDemo/s3614756376.jpg"  /></span>
+			<span><img src="ProjectDemo/s3604787068.jpg"  /></span>
+			<!--对应图片下的字幕-->
+			<div id="divcenter4">
+				<a>鲵苗7</a>
+				<a>鲵苗8</a>
+				<a>幼鲵1</a>
+				<a>幼鲵2</a>
+			</div>
+		</div>
+		
+		<!--身体（中：图片5）-->	
+		<div id="tabdiv5">
+			<span><img src="ProjectDemo/s3502827406.jpg"  /></span>
+			<span><img src="ProjectDemo/s3399151858.jpg"  /></span>
+			<span><img src="ProjectDemo/s3021350526.jpg"  /></span>
+			<span><img src="ProjectDemo/s2248071121.jpg"  /></span>
+			<!--对应图片下的字幕-->
+			<div id="divcenter5">
+				<a>幼鲵3</a>
+				<a>神鲵1</a>
+				<a>神鲵2</a>
+				<a>神鲵3</a>
+			</div>
+		</div>
+		
+		<!--身体（中：图片6）-->	
+		<div id="tabdiv6">
+			<span><img src="ProjectDemo/s1708813518.jpg"  /></span>
+			<span><img src="ProjectDemo/s1392589486.jpg"  /></span>		
+			<!--对应图片下的字幕-->
+			<div id="divcenter5">
+				<a>神鲵4</a>
+				<a>神鲵5</a>			
+			</div>
+		</div>	
+		</div>
+				
+			
+		<!--脚-->
+		<div id="fool">
+			<div id="toptxt">
+				<span>公司掠影|新闻中心 | 版权声明 | 在线留言 | 技术支持</span>
+				<br />
+				<span>版权所有 Copyright ? 2012-2015 长沙剑龙生物科技发展有限公司 湘ICP备1200230 </span>
+				<img src="Images/chk_right.gif" />
+			</div>
+		</div>
+						   
+       
+	</body>
+</html>

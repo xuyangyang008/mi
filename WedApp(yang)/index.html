@@ -1,0 +1,3296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="mi/favicon.ico" />
+<!--样式引入-->
+        <link rel="icon" href="img1/favicon.ico" type="image/x-icon" />
+		
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<title>小米商城</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/myfont.eot?53711433');
+				src: url('font/myfont.eot?53711433#iefix') format('embedded-opentype'), url('font/myfont-webfont.woff2.woff2?53711433') format('woff2'), url('font/myfont.woff?53711433') format('woff');
+				font-weight: 600;
+				font-style: normal;
+			}
+			
+			.iconfonts {
+				font-family: iconfont;
+				font-size: 23px;
+				font-style: normal;
+				font-weight: bold;
+			}
+			
+			.left-img {
+				font-family: iconfont;
+				font-style: normal;
+			}
+			
+			.site-topbar {
+				margin: 0 auto;
+				width: 100%;
+				height: 45px;
+				line-height: 50px;
+				font-size: 13px;
+				color: #b0b0b0;
+				background: #333;
+				font-weight: 600;
+				padding-left: 20px;
+				/*内边距*/
+			}
+			
+			.link {
+				float: right;
+				padding-right: 150px;
+			}
+			
+			.site-topbar a {
+				color: #B0B0B0;
+				text-decoration: none;
+			}
+			
+			.site-topbar a:hover {
+				color: #fff
+			}
+			
+			.sep {
+				margin: 0 .5em;
+				color: #424242;
+			}
+			/*小米logo*/
+			
+			#milogo {
+				height: 100px;
+				width: 1226px;
+				margin-left: 73px;
+				/*border: 2px solid saddlebrown;*/
+				position: relative;
+			}
+			
+			.leftLogo {
+				position: absolute;
+				bottom: 25px;
+				background: url(mi/logo-heder.png) no-repeat;
+				width: 56px;
+				height: 57px;
+			}
+			/*字幕向左偏移*/
+			
+			#fuwu {
+				position: relative;
+				padding-left: 200px;
+				/*border: 5px solid red;*/
+				height: 110px;
+			}
+			/*隐藏div*/
+			.text-atext div
+			{
+						
+				display: none;
+				position: absolute;
+			}
+			/*显示div*/
+			.text-atext:hover div{
+				display: block;				
+				position: absolute;
+			}
+			
+			/*定义div*/
+			
+			.text-stencil-doy {
+				position: absolute;
+				width: 1490px;
+				height: 330px;
+				left: -72px;
+				top: 115px;
+				border: 2px solid yellow;
+				background: white;
+				z-index: 99;
+			}
+			
+			.text-stencil-ul {
+				list-style: none;
+				margin-top: 30px;
+			}
+			
+			.text-stencil-li {
+				width: 205px;
+				height: 201px;
+				border: 1px solid sienna;
+				float: left;
+				margin-left: 25px;
+			}
+			/*小米*/
+			/*相对div*/
+			
+			.text-stencil-li a {
+				display: inline-block;
+				margin-top: 10px;
+				margin-left: 59px;
+				text-decoration: none;
+				/*border: 1px solid slateblue;*/
+			}
+			/*价格*/
+			
+			.text-stencil-li span {
+				display: inline-block;
+				margin-left: 83px;
+				margin-top: 10px;
+				width: 60;
+				height: 20;
+				border: 1px solid slateblue;
+			}
+			/*图片*/
+			
+			.text-stencil-li img {
+				display: inline-block;
+				margin: 10px 0 0 25px;
+				width: 140px;
+				height: 110px;
+				border-right: 3px solid #666666;
+			}
+			
+			.atext {
+				line-height: 100px;
+				font-size: 16px;
+				font-weight: 600;
+				padding-left: 20px;
+			}
+			
+			.atext .text1 {
+				color: #333333;
+				text-decoration: none;
+			}
+			
+			.atext a:hover {
+				color: #FF872A;
+			}
+			
+			.textsearch {
+				position: absolute;
+				right: 20px;
+				bottom: 25px;
+				width: 250px;
+				height: 50px;
+				float: right;
+			}
+			/*搜索*/
+			
+			.rigthmi {
+				position: absolute;
+				background: #EEEEEE;
+				width: 50px;
+				height: 48px;
+				right: 22px;
+				bottom: 26px;
+			}
+			
+			.TV {
+				position: absolute;
+				background: #EEEEEE;
+				width: 90PX;
+				height: 20px;
+				right: 81px;
+				bottom: 40px;
+			}
+			
+			.TV a,
+			.MIC a {
+				font-size: 10px;
+				color: #b0b0b0;
+				text-decoration: none;
+				line-height: 20px;
+			}
+			
+			.TV:hover,
+			.MIC:hover {
+				background: #FF6700;
+				color: white;
+			}
+			
+			.MIC {
+				position: absolute;
+				background: #EEEEEE;
+				width: 50px;
+				height: 20px;
+				right: 180px;
+				bottom: 40px;
+			}
+			/*显示隐藏*/
+			/*小米图片*/
+			
+			#imgmi {
+				width: 1226px;
+				height: 460px;
+				margin-left: 73px;
+				border-top: 1px solid #424242;
+				margin-top: 20px;
+				background: url(mi/1.jpg);
+			}
+			
+			#imgmi ul {
+				/*border: 10px solid yellow;*/
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			#imgmi li {
+				list-style: none;
+				padding: 0px 0 0 20px;
+				width: 215px;
+				height: 42px;
+				line-height: 42px;
+			}
+			
+			#imgmi li a {
+				color: white;
+				font-weight: 600;
+				font-size: 15px;
+				text-decoration: none;
+			}
+			/*ul里面div全部隐藏*/
+			
+			.menu-module div {
+				display: none;
+				position: absolute;
+			}
+			
+			#imgmi .right-module:hover {
+				background: #FF6709;
+			}
+			/*当鼠标放在li显出div里面内容*/
+			
+			.right-module:hover div {
+				position: absolute;
+				display: block;
+			}
+			/*手机电话卡 div*/
+			
+			.iphone-module {
+				position: absolute;
+				width: 800px;
+				height: 437px;
+				top: -20px;
+				left: 233px;
+				background: white;
+			}
+			/*笔记本 平板 div*/
+			
+			.iphone-module2 {
+				position: absolute;
+				width: 265px;
+				height: 437px;
+				top: -20px;
+				left: 233px;
+				background: white;
+			}
+			/*电视 盒子 div*/
+			
+			.iphone-module3 {
+				position: absolute;
+				width: 1000px;
+				height: 437px;
+				top: -20px;
+				left: 233px;
+				background: white;
+			}
+			/*路由器 智能硬件 div*/
+			
+			.iphone-module4 {
+				position: absolute;
+				width: 1000px;
+				height: 437px;
+				top: -20px;
+				left: 233px;
+				background: white;
+			}
+			/*ul子项*/
+			
+			.menu-module-doy {
+				position: relative;
+			}
+			/*li子项*/
+			
+			.right-module-doy {
+				float: left;
+				width: 256px;
+				height: 82px;
+				margin-top: 25px;
+				margin-left: 10px;
+				/*border: 5px solid salmon;*/
+			}
+			/*子 小米*/
+			
+			.mi-module {
+				/*font-weight: bold;*/
+				font-size: 14px;
+				color: #333;
+			}
+			/*子 选购*/
+			
+			.choose-module {
+				display: inline-block;
+				margin-left: 20px;
+				line-height: 25px;
+				width: 60px;
+				height: 24px;
+				text-align: center;
+				border: 3px solid #FF6709;
+			}
+			/*小米4张图片*/
+			
+			#six {
+				margin-top: 15px;
+				width: 1250px;
+				height: 171px;
+				margin-left: 73px;
+				/*border: 1px solid red;*/
+			}
+			
+			#six2 {}
+			
+			#six2 div {
+				/*margin-right: 9.7px;*/
+				float: left;
+				margin-right: 13px;
+			}
+			
+			.sexmi {
+				width: 230px;
+				height: 170px;
+				border: 1px solid red;
+			}
+			/*小米盒子*/
+			
+			.mibot {
+				background: url(mi/5.jpg) no-repeat;
+				background-size: 100% 100%;
+				width: 316px;
+				height: 170px;
+			}
+			/*红米*/
+			
+			.redrice {
+				background: url(mi/6.jpg) no-repeat;
+				background-size: 100% 100%;
+				width: 316px;
+				height: 170px;
+			}
+			/*米兔*/
+			
+			.Miffy {
+				background: url(mi/7.jpg) no-repeat;
+				background-size: 100% 100%;
+				width: 316px;
+				height: 170px;
+			}
+			/*小米明星单品*/
+			
+			#mistar {
+				line-height: 58px;
+				width: 1226px;
+				height: 58px;
+				margin-left: 73px;
+				margin-top: 20px;
+				/*border: 1px solid saddlebrown;*/
+			}
+			/*横排小米手机*/
+			
+			#rainbowIphone {
+				margin-top: 10px;
+				width: 1250px;
+				height: 343px;
+				margin-left: 73px;
+				/*border: 1px solid red;*/
+				overflow: hidden;
+			}
+			
+			.rainbow-item-1 {
+				position: relative;
+				width: 234px;
+				height: 340px;
+				margin-right: 11.5px;
+				float: left;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+				background: #FAFAFA;
+			}
+			/*小米5s1*/
+			
+			.rainbow-img {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				background: url(mi/1.png);
+				background-size: 100% 100%;
+				left: 35px;
+				top: 30px;
+			}
+			/*红米pro2*/
+			
+			.redrice-img {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				background: url(mi/2.png);
+				background-size: 100% 100%;
+				/*border: 1px solid blue;*/
+				left: 35px;
+				top: 30px;
+			}
+			/*小米Max3*/
+			
+			.rainbowMax-img {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				background: url(mi/3.png);
+				background-size: 100% 100%;
+				/*border: 1px solid blue;*/
+				left: 35px;
+				top: 30px;
+			}
+			/*小米笔记本4*/
+			
+			.Millet-computer {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				background: url(mi/4.png);
+				background-size: 100% 100%;
+				/*border: 1px solid blue;*/
+				left: 35px;
+				top: 30px;
+			}
+			/*小米平板5*/
+			
+			.Millet-slab {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				background: url(mi/5.png);
+				background-size: 100% 100%;
+				/*border: 1px solid blue;*/
+				left: 35px;
+				top: 30px;
+			}
+			/*介绍*/
+			
+			.textphone1 {
+				position: absolute;
+				width: 180px;
+				height: 20px;
+				left: 35px;
+				top: 210px;
+				/*border: 1px solid sandybrown;*/
+			}
+			
+			.textphone1 a {
+				font-size: 12px;
+				text-decoration: none;
+				font-weight: 600;
+				color: #494949;
+			}
+			/*介绍2*/
+			
+			.textphone2 {
+				font-size: 12px;
+				position: absolute;
+				color: #B4B0B0;
+				width: 210px;
+				height: 20px;
+				left: 16px;
+				top: 240px;
+				/*border: 1px solid sandybrown;*/
+			}
+			
+			.miPrice {
+				color: #FD8245;
+				position: absolute;
+				width: 180px;
+				height: 23px;
+				left: 35px;
+				top: 270px;
+				/*border: 1px solid sandybrown;*/
+			}
+			/*智能硬件*/
+			
+			#capacity {
+				margin-top: 30px;
+				width: 1226px;
+				margin-left: 73px;
+				/*border: 1px solid sandybrown;*/
+				height: 58px;
+				line-height: 58px;
+			}
+			
+			.titlecapacity {
+				float: left;
+			}
+			
+			.Lookall {
+				color: #494949;
+				text-decoration: none;
+				float: right;
+				text-decoration: none;
+				font-weight: 600;
+			}
+			
+			.Lookall:hover {
+				color: #FF6700;
+			}
+			
+			#robotsxi {
+				margin-top: 10px;
+				/*border: 1px solid sandybrown;*/
+				width: 1260px;
+				height: 629px;
+				margin-left: 73px;
+			}
+			/*小米手环2*/
+			
+			.robot {
+				width: 234px;
+				height: 628px;
+				/*border: 1px solid yellowgreen;*/
+				float: left;
+				background: url(mi/9.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.robot:hover {
+				transition: 0.5s;
+				margin-top: -4px;
+				box-shadow: 6px 6px 6px #CCCCCC;
+			}
+			/*智能硬件六张图片*/
+			
+			.capacitysxi {
+				width: 1020px;
+				height: 630px;
+				/*border: 1px solid sandybrown;*/
+				float: right;
+				text-align: center;
+				font-weight: 600;
+			}
+			
+			.miRouter {
+				position: relative;
+				width: 234px;
+				height: 300px;
+				/*border: 1px solid sandybrown;*/
+				float: left;
+				margin-right: 11.5px;
+				margin-bottom: 22px;
+			}
+			
+			.miRouter:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*免邮费*/
+			
+			.Free-shipping {
+				position: absolute;
+				width: 64px;
+				height: 20px;
+				top: 1px;
+				left: 85px;
+				/*border: 1px solid red;*/
+			}
+			/*小米路由器3C图片1*/
+			
+			.Millet3C {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/10.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*米家电饭煲2*/
+			
+			.electric-cooker {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/11.jpg);
+				background-size: 100% 100%;
+			}
+			/*米家净水器3*/
+			
+			.water-cleaner {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/12.jpg);
+				background-size: 100% 100%;
+			}
+			/*智米除菌加湿器4*/
+			
+			.Aseptic-humidifier {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/13.jpg);
+				background-size: 100% 100%;
+			}
+			/*米家压力IH电饭煲5*/
+			
+			.pressure-cooker {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/14.jpg);
+				background-size: 100% 100%;
+			}
+			/*九号平衡车6*/
+			
+			.balance-car {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/15.jpg);
+				background-size: 100% 100%;
+			}
+			/*米家小白智能摄像机7*/
+			
+			.mividicon {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/16.jpg);
+				background-size: 100% 100%;
+			}
+			/*米家扫地机器人8*/
+			
+			.mirobot {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/17.png);
+				background-size: 100% 100%;
+			}
+			/*小米标题*/
+			
+			.Millet-title {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 200px;
+				left: 10px;
+			}
+			
+			.Millet-title a {
+				font-size: 15px;
+				color: #494949;
+				text-decoration: none;
+			}
+			/*小米内容*/
+			
+			.Millet-text {
+				position: absolute;
+				width: 214px;
+				height: 18px;
+				top: 231px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				font-size: 14px;
+				color: #B4B0B0;
+			}
+			/*小米价格*/
+			
+			.Millet-Price {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 259px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				font-size: 14px;
+				color: #FD8245;
+			}
+			/*搭配*/
+			
+			#match {
+				margin-top: 15px;
+				margin-left: 73px;
+				width: 1226px;
+				height: 58px;
+				line-height: 58px;
+				/*border: 1px solid seagreen;*/
+			}
+			
+			#match span {
+				color: #333333;
+				font-size: 30px;
+				font-weight: 700;
+				float: left;
+			}
+			
+			#match a {
+				float: right;
+				text-decoration: none;
+				padding-right: 15px;
+				font-size: 22px;
+				color: #333333;
+			}
+			
+			#match a:hover {
+				text-decoration: underline;
+				color: #FF6700;
+			}
+			/*框架*/
+			
+			#Framework {
+				margin-top: 10px;
+				margin-left: 73px;
+				height: 630px;
+				width: 1280px;
+				/*border: 1px solid deepskyblue;*/
+			}
+			/*小米圈铁耳机Pro*/
+			
+			#miheadset {
+				float: left;
+				width: 234px;
+				height: 300px;
+				background: url(mi/18.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid seagreen;*/
+			}
+			/*小米随身蓝牙音箱*/
+			
+			#miBT {
+				margin-top: 10px;
+				width: 234px;
+				height: 300px;
+				background: url(mi/19.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid seagreen;*/
+				float: left;
+			}
+			
+			#miBT:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			
+			#miheadset:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			/*小米5张图片框架*/
+			
+			#mifive-img {
+				float: right;
+				width: 1035px;
+				height: 625px;
+				/*border: 1px solid sandybrown;*/
+			}
+			/*小米5张图片*/
+			
+			.mifive-item {
+				margin-bottom: 10px;
+				position: relative;
+				width: 234px;
+				height: 300px;
+				margin-right: 11.5px;
+				float: left;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+				background: #FAFAFA;
+			}
+			
+			.mifive-item:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			
+			.mifive-item2 {
+				margin-bottom: 10px;
+				position: relative;
+				width: 234px;
+				height: 300px;
+				margin-right: 11.5px;
+				float: left;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+				background: #FAFAFA;
+			}
+			/*小米蓝牙耳机青春版1*/
+			
+			.miYouth {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/20.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米圈铁耳机Pro2*/
+			
+			.miYouth-iron {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/21.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米小钢炮蓝牙音箱3*/
+			
+			.miYouth-steel {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/22.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米圈铁耳机4*/
+			
+			.miYouth-ring {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/23.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米蓝牙音箱5*/
+			
+			.miYouth-BT {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/24.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米活塞耳机基础版6*/
+			
+			.miYouth-base {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/25.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米车载充电器7*/
+			
+			.miYouth-Charger {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/26.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米移动8*/
+			
+			.miYouth-move {
+				position: absolute;
+				width: 232px;
+				height: 143px;
+				top: 0px;
+				left: 0px;
+				border: 1px solid #333333;
+			}
+			
+			.miYouth-move:hover {
+				margin-top: -1px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*小米移动-标题8*/
+			
+			.miYouth-move-title {
+				position: absolute;
+				left: 10px;
+				top: 25px;
+				width: 94px;
+				height: 21px;
+				border: 1px solid #348200;
+			}
+			/*小米移动-价格8*/
+			
+			.miYouth-move-Price {
+				position: absolute;
+				left: 10px;
+				top: 56px;
+				width: 94px;
+				height: 21px;
+				border: 1px solid #348200;
+			}
+			/*小米移动-图片8*/
+			
+			.miYouth-move-img {
+				position: absolute;
+				left: 124px;
+				top: 25px;
+				width: 80px;
+				height: 80px;
+				border: 1px solid #348200;
+				background: url(mi/27.jpg);
+				background-size: 100% 100%;
+			}
+			/*浏览更多*/
+			
+			.miYouth-browse {
+				position: absolute;
+				width: 232px;
+				height: 143px;
+				top: 153px;
+				left: 0px;
+				border: 1px solid #333333;
+			}
+			
+			.miYouth-browse:hover {
+				margin-top: -1px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			
+			.miYouth-browse-title {
+				position: absolute;
+				left: 124px;
+				top: 25px;
+				width: 80px;
+				height: 80px;
+				border: 1px solid #348200;
+			}
+			/*耳机标题*/
+			
+			.headset-title {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 200px;
+				left: 10px;
+			}
+			.headset-title  a{
+			font-weight: bold;
+			color: #B4B0B0;
+			text-decoration: none;
+			}
+			/*耳机价格*/
+			
+			.headset-Price {
+				position: absolute;
+				width: 214px;
+				height: 18px;
+				top: 231px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				font-size: 14px;
+				color: #FD8245;
+			}
+			/*耳机评价*/
+			
+			.headset-evaluate {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 259px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				font-size: 14px;
+				color: #B4B0B0;
+			}
+			/*配件*/
+			
+			#accessories {
+				margin-top: 15px;
+				margin-left: 73px;
+				width: 1226px;
+				height: 58px;
+				line-height: 58px;
+				/*border: 1px solid seagreen;*/
+			}
+			
+			#accessories span {
+				color: #333333;
+				font-size: 30px;
+				font-weight: 700;
+				float: left;
+			}
+			
+			#accessories a {
+				float: right;
+				text-decoration: none;
+				padding-right: 15px;
+				font-size: 22px;
+				color: #333333;
+			}
+			
+			#accessories a:hover {
+				text-decoration: underline;
+				color: #FF6700;
+			}
+			/*全场八折起*/
+			
+			#Overall {
+				float: left;
+				width: 234px;
+				height: 300px;
+				background: url(mi/28.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid seagreen;*/
+			}
+			
+			#Overall:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			/*小米移动电源*/
+			
+			#miPower {
+				margin-top: 10px;
+				width: 234px;
+				height: 300px;
+				background: url(mi/29.jpg);
+				background-size: 100% 100%;
+				border: 1px solid seagreen;
+				float: left;
+			}
+			
+			#miPower:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			/*小米手机5 小米5 钢化玻璃贴膜(0.22mm)*/
+			
+			.mi-glass {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/30.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米指环支架2*/
+			
+			.mi-Ring {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/31.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*红米Note4 标准高透贴膜 3*/
+			
+			.mi-HSR {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/32.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米Max标准高透贴膜4*/
+			
+			.mi-transparent {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/33.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米5s Plus 标准高透贴膜5*/
+			
+			.mi-5sPlus {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/34.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*红米Note4 智能显示保护套 6*/
+			
+			.mi-protective {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/35.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米5s 标准高透贴膜 7*/
+			
+			.mi-penetration {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/36.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米5s 标准高透贴膜 */
+			
+			.mi-move-img {
+				position: absolute;
+				left: 124px;
+				top: 25px;
+				width: 80px;
+				height: 80px;
+				/*border: 1px solid #348200;*/
+				background: url(mi/37.jpg);
+				background-size: 100% 100%;
+			}
+			/*90分旅行箱*/
+			
+			#suitcase {
+				float: left;
+				width: 234px;
+				height: 300px;
+				background: url(mi/40.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid seagreen;*/
+			}
+			
+			#suitcase:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			/*8H护颈乳胶枕*/
+			
+			#mirubber {
+				margin-top: 10px;
+				width: 234px;
+				height: 300px;
+				background: url(mi/41.jpg);
+				background-size: 100% 100%;
+				border: 1px solid seagreen;
+				float: left;
+			}
+			
+			#mirubber:hover {
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC
+			}
+			/*小米手机5 小米5 钢化玻璃贴膜(0.22mm)1*/
+			
+			.mi-fleece {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/42.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*经典连帽休闲卫衣2*/
+			
+			.mi-fallow {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/43.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米摇粒绒加厚保暖外套3*/
+			
+			.mi-jacket {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/44.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*小米羊毛围巾4*/
+			
+			.mi-Scarf {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/45.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*重松DD11V口罩5*/
+			
+			.mi-mask {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/46.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*2017年米兔台历（探索版） 6*/
+			
+			.mi-calendar {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/47.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*米兔福到贴7*/
+			
+			.mi-blessing {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				background: url(mi/48.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid #333333;*/
+			}
+			/*变形金刚特别版声波8 */
+			
+			.miYouth-Transformers-img {
+				position: absolute;
+				left: 124px;
+				top: 25px;
+				width: 80px;
+				height: 80px;
+				border: 1px solid #348200;
+				background: url(mi/49.jpg);
+				/*background-size: 100% 100%;*/
+			}
+			/*为你推荐（电脑）框架*/
+			
+			#Frame-recommended {
+				margin-top: 10px;
+				width: 1250px;
+				height: 302px;
+				margin-left: 73px;
+				/*border: 1px solid darkblue;*/
+			}
+			/*小米电脑五个框*/
+			
+			.mi-recommended {
+				position: relative;
+				width: 234px;
+				height: 280px;
+				/*border: 1px solid darkred;*/
+				margin-right: 10px;
+				float: left;
+			}
+			
+			.mi-recommended:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*小米电脑-图片*/
+			
+			.mi-recommended-img {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				/*border: 1px solid firebrick;*/
+				background: url(mi/51.jpg);
+			}
+			/*小米电脑-图片2*/
+			
+			.mi-recommended-img2 {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				/*border: 1px solid firebrick;*/
+				background: url(mi/52.jpg);
+			}
+			/*小米电脑-图片3*/
+			
+			.mi-recommended-img3 {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				/*border: 1px solid firebrick;*/
+				background: url(mi/53.jpg);
+			}
+			/*小米电脑-图片4*/
+			
+			.mi-recommended-img4 {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				/*border: 1px solid firebrick;*/
+				background: url(mi/54.jpg);
+			}
+			/*小米电脑-图片5*/
+			
+			.mi-recommended-img5 {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				top: 30px;
+				left: 37px;
+				/*border: 1px solid firebrick;*/
+				background: url(mi/55.jpg);
+			}
+			/*小米电脑-标题*/
+			
+			.mi-recommended-title {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 200px;
+				left: 8px;
+				/*border: 1px solid #333333;*/
+				text-align: center;
+			}
+			
+			.mi-recommended-title a {
+				color: #333333;
+				font-size: 15px;
+				text-decoration: none;
+				font-weight: 600;
+			}
+			/*小米电脑-价格*/
+			
+			.mi-recommended-Price {
+				position: absolute;
+				width: 214px;
+				height: 21px;
+				top: 228px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				text-align: center;
+				color: #FF812B;
+				font-weight: 600;
+			}
+			/*小米电脑-评价*/
+			
+			.mi-recommended-appraise {
+				position: absolute;
+				width: 214px;
+				height: 18px;
+				top: 255px;
+				left: 10px;
+				/*border: 1px solid #333333;*/
+				text-align: center;
+				color: #757575;
+				font-weight: 500;
+			}
+			/*热评产品-框架*/
+			
+			#Frame-Product {
+				margin: 10px 0 0 73px;
+				width: 1280px;
+				height: 430px;
+				/*border: 1px solid steelblue;*/
+			}
+			/*四个框架*/
+			
+			.four-Frame-Product {
+				position: relative;
+				width: 296px;
+				height: 415px;
+				float: left;
+				margin-right: 10px;
+				/*border: 1px solid red;*/
+			}
+			
+			.four-Frame-Product:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*图片1*/
+			
+			.Frame-Product-img {
+				position: absolute;
+				width: 294px;
+				height: 220px;
+				left: 1px;
+				top: 1px;
+				/*border: 1px solid blueviolet;*/
+				background: url(mi/56.jpg);
+				background-size: 100% 100%;
+			}
+			/*图片2*/
+			
+			.Frame-Product-img2 {
+				position: absolute;
+				width: 294px;
+				height: 220px;
+				left: 1px;
+				top: 1px;
+				/*border: 1px solid blueviolet;*/
+				background: url(mi/57.jpg);
+				background-size: 100% 100%;
+			}
+			/*图片3*/
+			
+			.Frame-Product-img3 {
+				position: absolute;
+				width: 294px;
+				height: 220px;
+				left: 1px;
+				top: 1px;
+				/*border: 1px solid blueviolet;*/
+				background: url(mi/58.jpg);
+				background-size: 100% 100%;
+			}
+			/*图片4*/
+			
+			.Frame-Product-img4 {
+				position: absolute;
+				width: 294px;
+				height: 220px;
+				left: 1px;
+				top: 1px;
+				/*border: 1px solid blueviolet;*/
+				background: url(mi/59.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.Frame-Product-text {
+				position: absolute;
+				width: 240px;
+				height: 73px;
+				top: 255px;
+				left: 20px;
+				/*border: 1px solid blueviolet;*/
+			}
+			
+			.Frame-Product-text a {
+				text-decoration: none;
+				font-weight: 600;
+				color: #333333;
+			}
+			
+			.Frame-Product-form {
+				position: absolute;
+				width: 240px;
+				height: 18px;
+				top: 340px;
+				left: 20px;
+				color: #B0B0B0;
+				/*border: 1px solid blueviolet;*/
+				font-weight: 600;
+				text-align: center;
+			}
+			
+			.Frame-Product-title {
+				position: absolute;
+				width: 130px;
+				height: 16px;
+				top: 368px;
+				left: 60px;
+				/*border: 1px solid blueviolet;*/
+			}
+			
+			.Frame-Product-title a {
+				color: #333333;
+				font-size: 12px;
+				text-decoration: none;
+				font-weight: 600;
+			}
+			
+			.Frame-Product-Price {
+				position: absolute;
+				width: 70px;
+				height: 16px;
+				top: 368px;
+				left: 190px;
+				/*border: 1px solid blueviolet;*/
+				color: #FF812C;
+				font-weight: 600;
+			}
+			/*内容大框架*/
+			
+			#Frame-content {
+				margin: 10px 0 0 73px;
+				width: 1280px;
+				height: 425px;
+				/*border: 1px solid steelblue;*/
+			}
+			/*四个框架*/
+			
+			.four-Frame-content {
+				position: relative;
+				width: 296px;
+				height: 420px;
+				float: left;
+				margin-right: 15px;
+				/*border: 1px solid red;*/
+			}
+			
+			.four-Frame-content:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*主题*/
+			
+			.Frame-content-theme {
+				position: absolute;
+				width: 276px;
+				height: 24px;
+				left: 10px;
+				top: 40px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+				font-weight: 600;
+			}
+			/*标题*/
+			
+			.Frame-content-title {
+				position: absolute;
+				width: 256px;
+				height: 26px;
+				left: 20px;
+				top: 74px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+			}
+			
+			.Frame-content-title a {
+				text-decoration: none;
+				font-weight: 600;
+				color: #333333;
+				font-size: 20px;
+			}
+			/*内容*/
+			
+			.Frame-content-text {
+				position: absolute;
+				width: 256px;
+				height: 40px;
+				left: 20px;
+				top: 110px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+			}
+			
+			.Frame-content-text a {
+				text-decoration: none;
+				font-weight: 600;
+				color: #B0B0B0;
+				font-size: 13px;
+			}
+			/*价格*/
+			
+			.Frame-content-price {
+				position: absolute;
+				width: 256px;
+				height: 20px;
+				left: 20px;
+				top: 160px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+			}
+			
+			.Frame-content-price a {
+				text-decoration: none;
+				font-weight: 600;
+				color: #333333;
+				font-size: 15px;
+			}
+			/*图片1*/
+			
+			.Frame-content-img {
+				position: absolute;
+				width: 216px;
+				height: 154px;
+				left: 40px;
+				top: 200px;
+				/*border: 1px solid yellowgreen;*/
+				background: url(mi/60.png);
+				background-size: 100% 100%;
+			}
+			/*图片2*/
+			
+			.Frame-content-img2 {
+				position: absolute;
+				width: 216px;
+				height: 154px;
+				left: 40px;
+				top: 200px;
+				/*border: 1px solid yellowgreen;*/
+				background: url(mi/61.jpg);
+				background-size: 100% 100%;
+			}
+			/*图片3*/
+			
+			.Frame-content-img3 {
+				position: absolute;
+				width: 216px;
+				height: 154px;
+				left: 40px;
+				top: 200px;
+				/*border: 1px solid yellowgreen;*/
+				background: url(mi/62.jpg);
+				background-size: 100% 100%;
+			}
+			/*图片4*/
+			
+			.Frame-content-img4 {
+				position: absolute;
+				width: 216px;
+				height: 154px;
+				left: 40px;
+				top: 200px;
+				/*border: 1px solid yellowgreen;*/
+				background: url(mi/64.jpg);
+				background-size: 100% 100%;
+			}
+			/*视频大框架*/
+			
+			#Frame-video {
+				margin: 10px 0 0 73px;
+				width: 1280px;
+				height: 300px;
+				/*border: 1px solid steelblue;*/
+			}
+			/*四个框架*/
+			
+			.four-Frame-video {
+				position: relative;
+				width: 296px;
+				height: 285px;
+				float: left;
+				margin-right: 12px;
+				/*border: 1px solid red;*/
+			}
+			
+			.four-Frame-video:hover {
+				top: -4px;
+				transition: 0.5s;
+				box-shadow: 6px 6px 10px #CCCCCC, -6px 0 10px #CCCCCC;
+			}
+			/*图片1*/
+			
+			.Frame-video-img {
+				position: absolute;
+				width: 296px;
+				height: 184px;
+				left: 0px;
+				top: 0px;
+				background: url(mi/65.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid yellowgreen;*/
+			}
+			/*图片2*/
+			
+			.Frame-video-img2 {
+				position: absolute;
+				width: 296px;
+				height: 184px;
+				left: 0px;
+				top: 0px;
+				background: url(mi/66.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid yellowgreen;*/
+			}
+			/*图片3*/
+			
+			.Frame-video-img3 {
+				position: absolute;
+				width: 296px;
+				height: 184px;
+				left: 0px;
+				top: 0px;
+				background: url(mi/67.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid yellowgreen;*/
+			}
+			/*图片4*/
+			
+			.Frame-video-img4 {
+				position: absolute;
+				width: 296px;
+				height: 184px;
+				left: 0px;
+				top: 0px;
+				background: url(mi/68.jpg);
+				background-size: 100% 100%;
+				/*border: 1px solid yellowgreen;*/
+			}
+			
+			.Frame-video-title {
+				position: absolute;
+				width: 250px;
+				height: 21px;
+				left: 20px;
+				top: 200px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+			}
+			
+			.Frame-video-title a {
+				font-size: 16px;
+				color: #303030;
+				text-decoration: none;
+				font-weight: 600;
+			}
+			
+			.Frame-video-text {
+				position: absolute;
+				width: 250px;
+				height: 21px;
+				left: 20px;
+				top: 230px;
+				/*border: 1px solid yellowgreen;*/
+				text-align: center;
+				font-size: 13px;
+				color: #959595;
+				font-weight: 600;
+			}
+			
+			#footer {
+				margin-top: 50px;
+				margin-left: 73px;
+				width: 1349px;
+				height: 272px;
+				border: 1px solid red;
+				background: white;
+			}
+			
+			.footer-header {
+				margin-left: 20px;
+				width: 1226px;
+				height: 80px;
+				border: 1px solid yellow;
+				text-align: center;
+				font-size: 20px;
+				line-height: 80px;
+			}
+			
+			.footer-daohan {
+				display: inline-block;
+				width: 220px;
+				height: 80px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="site-topbar">
+			<!--头部-->
+			<div calss="topbar-nav">
+				<a href="#" title="羊羊羊">小米商城</a><span class="sep">|</span>
+				<a href="#">MIUI</a><span class="sep">|</span>
+				<a href="#">米聊</a><span class="sep">|</span>
+				<a href="#">游戏</a><span class="sep">|</span>
+				<a href="#">多看阅读</a><span class="sep">|</span>
+				<a href="#">云服务</a><span class="sep">|</span>
+				<a href="#">金融</a><span class="sep">|</span>
+				<a href="#">小米网移动版</a><span class="sep">|</span>
+				<a href="#">问题反馈</a><span class="sep">|</span>
+				<a href="#">Select Region</a>
+
+				<div class="link">
+					<a href="#" title="羊羊羊">登入</a><span class="sep">|</span>
+					<a href="#">注册</a>
+					<span class="sep">|</span>
+					<a href="#">消息通知</a>
+					<span class="sep">|</span>
+					<a href="#">购物车</a><span class="sep">|</span>
+				</div>
+			</div>
+		</div>
+
+		<!--小米logo-->
+		<div id="milogo">
+			<span class="leftLogo"></span>
+			<!--字幕向左偏移-->
+			<div id="fuwu">
+				<span class="text-atext">
+					
+				<span class="atext" id="atext-modult"><a  class="text1" href="#">小米手机</a></span>
+				<div class="text-stencil-doy">
+					<ul class="text-stencil-ul">
+						<li class="text-stencil-li">
+							<img src="mi/150.jpg" / class="text-stencil-img">
+							<a href="" class="text-stencil-title">小米Note 2</a>
+							<span class="text-stencil-Price">1999</span>
+				  </li>
+				<li class="text-stencil-li">
+					<img src="mi/150.jpg" / class="text-stencil-img">
+					<a href="" class="text-stencil-title">小米Note 2</a>
+					<span class="text-stencil-Price">1999</span>
+				</li>
+				<li class="text-stencil-li">
+					<img src="mi/150.jpg" / class="text-stencil-img">
+					<a href="" class="text-stencil-title">小米Note 2</a>
+					<span class="text-stencil-Price">1999</span>
+				</li>
+				<li class="text-stencil-li">
+					<img src="mi/150.jpg" / class="text-stencil-img">
+					<a href="" class="text-stencil-title">小米Note 2</a>
+					<span class="text-stencil-Price">1999</span>
+				</li>
+				<li class="text-stencil-li">
+					<img src="mi/150.jpg" / class="text-stencil-img">
+					<a href="" class="text-stencil-title">小米Note 2</a>
+					<span class="text-stencil-Price">1999</span>
+				</li>
+				<li class="text-stencil-li">
+					<img src="mi/150.jpg" / class="text-stencil-img">
+					<a href="" class="text-stencil-title">小米Note 2</a>
+					<span class="text-stencil-Price">1999</span>
+				</li>
+				</ul>
+			</div>
+		
+
+				<span class="atext"><a class="text1" href="#">红米</a></span>
+				<span class="atext"><a class="text1" href="#">平板·笔记本</a></span>
+				<span class="atext"><a class="text1" href="#">电视</a></span>
+				<span class="atext"><a class="text1" href="#">盒子·影音</a></span>
+				<span class="atext"><a class="text1" href="#">路由器</a></span>
+				<span class="atext"><a class="text1" href="#">智能硬件</a></span>
+				<span class="atext"><a class="text1" href="#">服务</a></span>
+				<span class="atext"><a class="text1" href="#">社区</a></span>
+				
+				
+          </span>
+			</div>
+
+			<input class="textsearch" type="search" />
+			<!--搜索-->
+			<a href="#">
+				<div class="rigthmi"></div>
+			</a>
+			<!--人工智能電視-->
+			<div class="TV">
+				<a href="#">人工智能電視</a>
+			</div>
+			<div class="MIC">
+				<a href="#">小米MIC</a>
+			</div>
+		</div>
+
+		<!--小米图片-->
+		<div id="imgmi">
+			<ul class="menu-module">
+				<li class="right-module">
+					<a href="#">手机 电话卡</a>
+					<div class="iphone-module">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/85.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/86.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/87.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/88.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/89.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/90.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/91.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/92.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/93.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="right-module">
+					<a href="#">笔记本 平板</a>
+					<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="right-module">
+					<a href="#">电视 盒子</a>
+					<div class="iphone-module3">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="right-module">
+					<a href="#">路由器 智能硬件</a>
+					<div class="iphone-module4">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">移动电源 电池 插线板</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">耳机 音箱</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">保护套 贴膜</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">线材 支架 存储卡</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">箱包 服饰</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class="right-module">
+					<a href="#">米兔 生活周边</a>
+						<div class="iphone-module2">
+						<ul class="menu-module-doy">
+							<li class="right-module-doy">
+								<img src="mi/80.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/81.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/82.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/83.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+
+							<li class="right-module-doy">
+								<img src="mi/84.jpg" / align="absmiddle">
+								<span class="mi-module">小米Note 2</span>
+								<span class="choose-module">选购</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!--小米4张图片-->
+		<div id="six">
+			<div id="six2">
+				<!--六个选项-->
+				<div class="sexmi"></div>
+				<!--小米盒子-->
+				<div class="mibot"></div>
+				<!--红米-->
+				<div class="redrice"></div>
+				<!--米兔-->
+				<div class=" Miffy"></div>
+			</div>
+		</div>
+
+		<!--小米明星单品-->
+		<div id="mistar">
+			<h2>小米明星单品</h2>
+		</div>
+
+		<!--横排小米手机-->
+		<div id="rainbowIphone">
+			<!--小米5s1-->
+			<div class="rainbow-item-1" style="border-top: 1px solid #FFAC13;">
+				<div class="rainbow-img"></div>
+				<span class="textphone1"><a href="#">小米5s Plus</a></span>
+				<span class="textphone2">5.7英寸大屏双摄手机，拍照黑科技</span>
+				<span class="miPrice">2299元起</span>
+			</div>
+			<div class="rainbow-item-1" style="border-top: 1px solid #83C44E;">
+				<!--红米pro2-->
+				<div class="redrice-img"></div>
+				<span class="textphone1"><a href="#">红米Pro  十核双摄</a></span>
+				<span class="textphone2">双摄像头手机，像单反一样去拍照</span>
+				<span class="miPrice">1099元起</span>
+			</div>
+			<div class="rainbow-item-1" style="border-top: 1px solid #2196F3;">
+				<!--小米Max3-->
+				<div class="rainbowMax-img"></div>
+				<span class="textphone1"><a href="#">小米Max</a></span>
+				<span class="textphone2">享花呗分期，最高享 12 期</span>
+				<span class="miPrice">1799元</span>
+			</div>
+			<div class="rainbow-item-1" style="border-top: 1px solid red;">
+				<!--小米笔记本4-->
+				<div class="Millet-computer"></div>
+				<span class="textphone1"><a href="#">小米笔记本</a></span>
+				<span class="textphone2">独立显卡、超轻薄、金属机身</span>
+				<span class="miPrice">3499元</span>
+			</div>
+			<div class="rainbow-item-1" style="border-top: 1px solid #00C0A5;">
+				<!--小米平板5-->
+				<div class="Millet-slab"></div>
+				<span class="textphone1"><a href="#">小米平板2 16GB现货</a></span>
+				<span class="textphone2">轻薄全金属，海量内容</span>
+				<span class="miPrice">999元</span>
+			</div>
+		</div>
+
+		<!--智能硬件-->
+		<div id="capacity">
+			<h2 class="titlecapacity">智能硬件</h2>
+			<a href="#" class="Lookall"> 查看全部</a>
+		</div>
+
+		<!--大框架-->
+		<div id="robotsxi">
+			<!--小米手环2-->
+			<div class="robot"></div>
+			<!--智能硬件六张图片-->
+			<div class="capacitysxi">
+				<div class="miRouter">
+					<!--免邮费1-->
+					<div class="Free-shipping"></div>
+					<!--小米路由器3C图片1-->
+					<div class="Millet3C"></div>
+					<span class="Millet-title"><a href="#">小米路由器3C</a> </span>
+					<span class="Millet-text">APP智能控制，安全防蹭网</span>
+					<span class="Millet-Price">99元</span>
+				</div>
+				<div class="miRouter">
+					<!--新品2-->
+					<div class="Free-shipping"></div>
+					<!--米家电饭煲2-->
+					<div class="electric-cooker"></div>
+					<span class="Millet-title"><a href="#">米家IH电饭煲</a> </span>
+					<span class="Millet-text">IH电磁环绕加热,多功能智能电饭煲</span>
+					<span class="Millet-Price">399元</span>
+				</div>
+				<div class="miRouter">
+					<!--有赠品3-->
+					<div class="Free-shipping"></div>
+					<!--米家净水器3-->
+					<div class="water-cleaner"></div>
+					<span class="Millet-title"><a href="#">小米净水器（厨上式）</a> </span>
+					<span class="Millet-text">限量送 TDS 检测笔</span>
+					<span class="Millet-Price">1299元</span>
+				</div>
+				<div class="miRouter">
+					<!--新品4-->
+					<div class="Free-shipping"></div>
+					<!--智米除菌加湿器4-->
+					<div class="Aseptic-humidifier"></div>
+					<span class="Millet-title"><a href="#">智米除菌加湿器</a> </span>
+					<span class="Millet-text">UVGI 紫外线除菌，便捷上注水设计</span>
+					<span class="Millet-Price">799元</span>
+				</div>
+				<div class="miRouter">
+					<!--米家压力IH电饭煲5-->
+					<div class="pressure-cooker"></div>
+					<span class="Millet-title"><a href="#">米家压力IH电饭煲5</a> </span>
+					<span class="Millet-text">智能控制，压力 IH 电饭煲</span>
+					<span class="Millet-Price">999元</span>
+				</div>
+				<div class="miRouter">
+					<!--九号平衡车6-->
+					<div class="balance-car"></div>
+					<span class="Millet-title"><a href="#">九号平衡车</a> </span>
+					<span class="Millet-text">年轻人的酷玩具，骑行遥控两种玩法</span>
+					<span class="Millet-Price">1999元</span>
+				</div>
+				<div class="miRouter">
+					<!--米家小白智能摄像机7-->
+					<div class="mividicon"></div>
+					<span class="Millet-title"><a href="#">米家小白智能摄像机</a> </span>
+					<span class="Millet-text">360度全景拍摄，双向语音通话</span>
+					<span class="Millet-Price">399元</span>
+				</div>
+				<div class="miRouter">
+					<!--米家扫地机器人8-->
+					<div class="mirobot"></div>
+					<span class="Millet-title"><a href="#">米家扫地机器人</a> </span>
+					<span class="Millet-text">远程智能控制，扫得干净扫得快</span>
+					<span class="Millet-Price">1699元</span>
+				</div>
+			</div>
+		</div>
+		<!--搭配-->
+		<div id="match">
+			<span>搭配</span>
+			<a href="#">热门</a>
+			<a href="#">耳机音箱</a>
+			<a href="#">电源</a>
+			<a href="#">电池存储卡</a>
+		</div>
+
+		<!--框架-->
+		<div id="Framework">
+			<!--小米权铁耳机Pro-->
+			<div id="miheadset"></div>
+			<!--小米5张图片-->
+			<div id="mifive-img">
+				<div class="mifive-item">
+					<!--新品1-->
+					<div class="Free-shipping"></div>
+					<!--  小米蓝牙耳机青春版1  -->
+					<div class="miYouth"></div>
+					<span class="headset-title"><a href="#">  小米蓝牙耳机青春版  </a> </span>
+					<span class="headset-Price">59元</span>
+					<span class="headset-evaluate">920人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--新品2-->
+					<div class="Free-shipping"></div>
+					<!--    小米圈铁耳机Pro2    -->
+					<div class="miYouth-iron"></div>
+					<span class="headset-title"><a href="#">  小米圈铁耳机Pro  </a> </span>
+					<span class="headset-Price">149元</span>
+					<span class="headset-evaluate">3758人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--    小米小钢炮蓝牙音箱3  -->
+					<div class="miYouth-steel"></div>
+					<span class="headset-title"><a href="#">小米小钢炮蓝牙音箱</a> </span>
+					<span class="headset-Price">129元</span>
+					<span class="headset-evaluate">1.8万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--    小米圈铁耳机4 -->
+					<div class="miYouth-ring"></div>
+					<span class="headset-title"><a href="#">小米圈铁耳机</a> </span>
+					<span class="headset-Price">99元</span>
+					<span class="headset-evaluate">2.7万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--    小米蓝牙音箱 5  -->
+					<div class="miYouth-BT"></div>
+					<span class="headset-title"><a href="#">小米蓝牙音箱 </a> </span>
+					<span class="headset-Price">199元</span>
+					<span class="headset-evaluate">2.2万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--    小米活塞耳机基础版 6  -->
+					<div class="miYouth-base"></div>
+					<span class="headset-title"><a href="#">小米活塞耳机 基础版</a> </span>
+					<span class="headset-Price">199元</span>
+					<span class="headset-evaluate">2.2万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--    小米车载充电器 7  -->
+					<div class="miYouth-Charger"></div>
+					<span class="headset-title"><a href="#">小米车载充电器 </a> </span>
+					<span class="headset-Price">49元</span>
+					<span class="headset-evaluate">3.8万人评价</span>
+				</div>
+				<div class="mifive-item2">
+					<!--小米移动-->
+					<div class="miYouth-move">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="miYouth-move-img"></span>
+					</div>
+					<!--浏览更多-->
+					<div class="miYouth-browse">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="miYouth-move-img"></span>
+					</div>
+				</div>
+			</div>
+			<!--小米随身蓝牙音箱-->
+			<div id="miBT"></div>
+		</div>
+
+		<!--配件-->
+		<div id="accessories">
+			<span>配件</span>
+			<a href="#">热门</a>
+			<a href="#">保护套</a>
+			<a href="#">贴膜</a>
+			<a href="#">其他配件</a>
+		</div>
+
+		<!--框架-->
+		<div id="Framework">
+			<!--全场八折起-->
+			<div id="Overall"></div>
+			<!--小米5张图片-->
+			<div id="mifive-img">
+				<div class="mifive-item">
+					<!--新品1-->
+					<div class="Free-shipping"></div>
+					<!-- 小米手机5 小米5 钢化玻璃贴膜(0.22mm)1-->
+					<div class="mi-glass"></div>
+					<span class="headset-title"><a href="#">小米手机5 小米5 钢化玻璃贴膜(0.22mm)</a> </span>
+					<span class="headset-Price">29元</span>
+					<span class="headset-evaluate">4.5万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--新品2-->
+					<div class="Free-shipping"></div>
+					<!--小米指环支架2-->
+					<div class="mi-Ring"></div>
+					<span class="headset-title"><a href="#"> 小米指环支架 </a> </span>
+					<span class="headset-Price">149元</span>
+					<span class="headset-evaluate">3758人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--红米Note4 标准高透贴膜 3-->
+					<div class="mi-HSR"></div>
+					<span class="headset-title"><a href="#">红米Note4 标准高透贴膜 </a> </span>
+					<span class="headset-Price">19元</span>
+					<span class="headset-evaluate">982人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--小米Max标准高透贴膜4 -->
+					<div class="mi-transparent"></div>
+					<span class="headset-title"><a href="#">小米Max 标准高透贴膜</a> </span>
+					<span class="headset-Price">19元</span>
+					<span class="headset-evaluate">1万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--小米5s Plus 标准高透贴膜5-->
+					<div class="mi-5sPlus"></div>
+					<span class="headset-title"><a href="#">小米5s Plus 标准高透贴膜 </a> </span>
+					<span class="headset-Price">19元</span>
+					<span class="headset-evaluate">1725人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--红米Note4 智能显示保护套 6  -->
+					<div class="mi-protective"></div>
+					<span class="headset-title"><a href="#">红米Note4 智能显示保护套</a> </span>
+					<span class="headset-Price">39元</span>
+					<span class="headset-evaluate">3151人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--小米5s 标准高透贴膜 7 -->
+					<div class="mi-penetration"></div>
+					<span class="headset-title"><a href="#">小米5s 标准高透贴膜 </a> </span>
+					<span class="headset-Price">19元</span>
+					<span class="headset-evaluate">2332人评价</span>
+				</div>
+				<div class="mifive-item2">
+					<!--小米移动-->
+					<div class="miYouth-move">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="mi-move-img"></span>
+					</div>
+					<!--浏览更多-->
+					<div class="miYouth-browse">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="miYouth-move-img"></span>
+					</div>
+				</div>
+			</div>
+			<!--小米移动电源-->
+			<div id="miPower"></div>
+		</div>
+
+		<!--周边-->
+		<div id="accessories">
+			<span>周边</span>
+			<a href="#">热门</a>
+			<a href="#">服装</a>
+			<a href="#">米兔</a>
+			<a href="#">生活周边</a>
+			<a href="#">箱包</a>
+		</div>
+
+		<!--框架-->
+		<div id="Framework">
+			<!--90分旅行箱-->
+			<div id="suitcase"></div>
+			<!--小米5张图片-->
+			<div id="mifive-img">
+				<div class="mifive-item">
+					<!--新品1-->
+					<div class="Free-shipping"></div>
+					<!--  小米空气层连帽运动卫衣 男款1  -->
+					<div class="mi-fleece"></div>
+					<span class="headset-title"><a href="#">小米空气层连帽运动卫衣 男款</a> </span>
+					<span class="headset-Price">199元</span>
+					<span class="headset-evaluate">1086人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--新品2-->
+					<div class="Free-shipping"></div>
+					<!--经典连帽休闲卫衣2-->
+					<div class="mi-fallow"></div>
+					<span class="headset-title"><a href="#">经典连帽休闲卫衣</a> </span>
+					<span class="headset-Price">149元</span>
+					<span class="headset-evaluate">3758人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--小米摇粒绒加厚保暖外套3-->
+					<div class="mi-jacket"></div>
+					<span class="headset-title"><a href="#">小米小钢炮蓝牙音箱</a> </span>
+					<span class="headset-Price">129元</span>
+					<span class="headset-evaluate">1.8万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--小米羊毛围巾4-->
+					<div class="mi-Scarf"></div>
+					<span class="headset-title"><a href="#">小米圈铁耳机</a> </span>
+					<span class="headset-Price">99元</span>
+					<span class="headset-evaluate">2.7万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--重松DD11V口罩5-->
+					<div class="mi-mask"></div>
+					<span class="headset-title"><a href="#">小米蓝牙音箱 </a> </span>
+					<span class="headset-Price">199元</span>
+					<span class="headset-evaluate">2.2万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!-- 2017年米兔台历（探索版） 6-->
+					<div class="mi-calendar"></div>
+					<span class="headset-title"><a href="#">小米活塞耳机 基础版</a> </span>
+					<span class="headset-Price">199元</span>
+					<span class="headset-evaluate">2.2万人评价</span>
+				</div>
+				<div class="mifive-item">
+					<!--米兔福到贴7-->
+					<div class="mi-blessing"></div>
+					<span class="headset-title"><a href="#">小米车载充电器 </a> </span>
+					<span class="headset-Price">49元</span>
+					<span class="headset-evaluate">3.8万人评价</span>
+				</div>
+				<div class="mifive-item2">
+					<!--小米移动-->
+					<div class="miYouth-move">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="miYouth-Transformers-img"></span>
+					</div>
+					<!--浏览更多-->
+					<div class="miYouth-browse">
+						<!--标题-->
+						<a href="#" class="miYouth-move-title"></a>
+						<!--价格-->
+						<span class="miYouth-move-Price"></span>
+						<!--图片-->
+						<span class="miYouth-move-img"></span>
+					</div>
+				</div>
+			</div>
+			<!--8H护颈乳胶枕-->
+			<div id="mirubber"></div>
+		</div>
+
+		<!--为你推荐-->
+		<div id="accessories">
+			<span>为你推荐</span>
+			<a href="#">热门</a>
+		</div>
+
+		<!--为你推荐（电脑）框架-->
+		<div id="Frame-recommended">
+			<!--小米电脑五个框-->
+			<div class="mi-recommended">
+				<!-- 小米笔记本Air 13.3英寸1-->
+				<div class="mi-recommended-img"></div>
+				<span class="mi-recommended-title"><a href="#">13.3英寸</a></span>
+				<span class="mi-recommended-Price">4999元</span>
+				<span class="mi-recommended-appraise">3632人好评</span>
+			</div>
+			<div class="mi-recommended">
+				<!-- 小米电视3s 65英寸 影院版2 -->
+				<div class="mi-recommended-img2"></div>
+				<span class="mi-recommended-title"><a href="#">小米电视3s65英寸影院版</a> </span>
+				<span class="mi-recommended-Price">5999元</span>
+
+			</div>
+			<div class="mi-recommended">
+				<!--小米电视3s  55英寸家庭影院版3 -->
+				<div class="mi-recommended-img3"></div>
+				<span class="mi-recommended-title"><a href="#">小米电视3s55英寸家庭影院版 </a></span>
+				<span class="mi-recommended-Price">3999元</span>
+			</div>
+			<div class="mi-recommended">
+				<!-- 10000mAh小米移动电源4-->
+				<div class="mi-recommended-img4"></div>
+				<span class="mi-recommended-title"><a href="#"> 10000mAh小米移动电源2</a> </span>
+				<span class="mi-recommended-Price">79元</span>
+				<span class="mi-recommended-appraise">6896人好评</span>
+			</div>
+			<div class="mi-recommended">
+				<!--米家恒温电水壶-->
+				<div class="mi-recommended-img5"></div>
+				<span class="mi-recommended-title"><a href="#">米家恒温电水壶</a></span>
+				<span class="mi-recommended-Price">199元</span>
+				<span class="mi-recommended-appraise">5982人好评</span>
+			</div>
+		</div>
+
+		<!--热评产品-->
+		<div id="accessories">
+			<span>热评产品</span>
+			<a href="#">热门</a>
+		</div>
+
+		<!--热评产品-框架-->
+		<div id="Frame-Product">
+			<!--四个框架-->
+			<div class="four-Frame-Product">
+				<!--图片1-->
+				<div class="Frame-Product-img"></div>
+				<span class="Frame-Product-text"><a href="#">非常好的一款小米产品！新国货！净化后的水～有点甜甜的味道！真的是很好的产品！是送亲戚朋友的最好的礼物！</a></span>
+				<span class="Frame-Product-form">来自于寂寞成舞的评价</span>
+				<span class="Frame-Product-title"><a href="#">小米净水器|</a></span>
+				<span class="Frame-Product-Price">1299元</span>
+			</div>
+			<div class="four-Frame-Product">
+				<!--图片2-->
+				<div class="Frame-Product-img2"></div>
+				<span class="Frame-Product-text"><a href="#">这个很萌啊！如果可以接入网关，通过语音互动实现控制电器，是不是会有点钢铁侠他家的味道？</a></span>
+				<span class="Frame-Product-form">来自于 城中草民 的评价 </span>
+				<span class="Frame-Product-title"><a href="#">米家小白智能摄像机|</a></span>
+				<span class="Frame-Product-Price">399元</span>
+			</div>
+			<div class="four-Frame-Product">
+				<!--图片3-->
+				<div class="Frame-Product-img3"></div>
+				<span class="Frame-Product-text"><a href="#">包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</a></span>
+				<span class="Frame-Product-form">来自于 HZG 的评价 </span>
+				<span class="Frame-Product-title"><a href="#">米家压力IH电饭煲|</a></span>
+				<span class="Frame-Product-Price">999元</span>
+			</div>
+			<div class="four-Frame-Product">
+				<!--图片4-->
+				<div class="Frame-Product-img4"></div>
+				<span class="Frame-Product-text"><a href="#">漂亮，轮子和拉杆都很不错，总的来说非常值得买</a></span>
+				<span class="Frame-Product-form">来自于 豆筋子 的评价 </span>
+				<span class="Frame-Product-title"><a href="#">90分旅行箱 20寸|</a></span>
+				<span class="Frame-Product-Price">299元</span>
+			</div>
+		</div>
+
+		<!--内容-->
+		<div id="accessories">
+			<span>内容</span>
+			<a href="#">热门</a>
+		</div>
+
+		<!--内容大框架-->
+		<div id="Frame-content">
+			<!--四个框架-->
+			<div class="four-Frame-content" style="border-top:1px solid#FFB313 ;">
+				<span class="Frame-content-theme" style="color:#FFB313;">图片</span>
+				<span class="Frame-content-title"><a href="#">哈利·波特与被诅咒的孩子</a></span>
+				<span class="Frame-content-text"><a href="#">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a></span>
+				<span class="Frame-content-price"><a href="#">29.37元</a></span>
+				<!--图片1-->
+				<div class="Frame-content-img"></div>
+			</div>
+			<div class="four-Frame-content" style="border-top:1px solid#8BC859;">
+				<span class="Frame-content-theme" style="color:#8BC859;">MIUI 主题</span>
+				<span class="Frame-content-title"><a href="#">小米Note 2</a></span>
+				<span class="Frame-content-text"><a href="#">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a></span>
+				<span class="Frame-content-price"><a href="#">免费</a></span>
+				<!--图片2-->
+				<div class="Frame-content-img2"></div>
+			</div>
+			<div class="four-Frame-content" style="border-top:1px solid#E53935;">
+				<span class="Frame-content-theme" style="color:#E53935;">游戏</span>
+				<span class="Frame-content-title"><a href="#">剑侠世界</a></span>
+				<span class="Frame-content-text"><a href="#">一生不容错过的浪漫武侠！！</a></span>
+				<span class="Frame-content-price"><a href="#">免费</a></span>
+				<!--图片3-->
+				<div class="Frame-content-img3"></div>
+			</div>
+			<div class="four-Frame-content" style="border-top:1px solid#2196F3;">
+				<span class="Frame-content-theme" style="color:#2196F3;">应用</span>
+				<span class="Frame-content-title"><a href="#">2015年度应用</a></span>
+				<span class="Frame-content-text"><a href="#">2015年度应用</a></span>
+				<span class="Frame-content-price"><a href="#">免费</a></span>
+				<!--图片4-->
+				<div class="Frame-content-img4"></div>
+			</div>
+		</div>
+
+		<!--视频-->
+		<div id="accessories">
+			<span>视频</span>
+			<a href="#">查看全部</a>
+		</div>
+
+		<!--视频大框架-->
+		<div id="Frame-video">
+			<div class="four-Frame-video">
+				<!--图片1-->
+				<div class="Frame-video-img"></div>
+				<span class="Frame-video-title"><a href="#">梁朝伟讲述小米Note2 的冰山理论</a></span>
+				<span class="Frame-video-text">第一眼看到的美，只是全部创作的八分之一</span>
+			</div>
+			<div class="four-Frame-video">
+				<!--图片2-->
+				<div class="Frame-video-img2"></div>
+				<span class="Frame-video-title"><a href="#">小米MIX 概念手机背后的故事</a></span>
+				<span class="Frame-video-text">雷总亲自讲述小米MIX 的诞生</span>
+			</div>
+			<div class="four-Frame-video">
+				<!--图片3-->
+				<div class="Frame-video-img3"></div>
+				<span class="Frame-video-title"><a href="#">一面科技，一面艺术</a></span>
+				<span class="Frame-video-text">梁朝伟讲述双面人生</span>
+			</div>
+			<div class="four-Frame-video">
+				<!--图片5-->
+				<div class="Frame-video-img4"></div>
+				<span class="Frame-video-title"><a href="#">菲利普·斯塔克的设计哲学</a></span>
+				<span class="Frame-video-text">最负盛名的设计大师，物质越少人性越多</span>
+			</div>
+		</div>
+
+		<!--<div id="footer">
+			<div class="footer-header">
+				<a href="#" class="footer-daohan"><i class="iconfonts">&#xe634;</i>预约维修服务</a>
+				<span class="footer-daohan"><i class="iconfonts">&#xe635;</i>预约维修服务</span>
+				<span class="footer-daohan"><i class="iconfonts">&#xe636;</i>预约维修服务</span>
+				<span class="footer-daohan"><i class="iconfonts">&#xe638;</i>预约维修服务</span>
+				<span class="footer-daohan"><i class="iconfonts">&#xe637;</i>预约维修服务</span>
+			</div>
+		</div>-->
+		
+		
+		
+		
+		<div class="footer">
+			<div class="container">
+				<!--<div class="footer-service">
+					<ul class="list-service clearfix">
+						<li>
+							<a href="#"><i class="iconfont">&#xe634;</i>预约维修服务</a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont">&#xe635;</i>7天无理由退货</a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont">&#xe636;</i>15天免费换货</a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont">&#xe638;</i>满150元包邮</a>
+						</li>
+						<li>
+							<a href="#"><i class="iconfont">&#xe637;</i>520余家售后网点</a>
+						</li>
+					</ul>
+				</div>-->
+				<div class="footer-links clearfix">
+					<dl class="col-links cl-first">
+						<dt>帮助中心</dt>
+						<dd>
+							<a href="#">账户管理</a>
+						</dd>
+						<dd>
+							<a href="#">购物指南</a>
+						</dd>
+						<dd>
+							<a href="#">订单操作</a>
+						</dd>
+					</dl>
+					<dl class="col-links">
+						<dt>服务支持</dt>
+						<dd>
+							<a href="#">售后政策</a>
+						</dd>
+						<dd>
+							<a href="#">自助服务</a>
+						</dd>
+						<dd>
+							<a href="#">相关下载</a>
+						</dd>
+					</dl>
+					<dl class="col-links">
+						<dt>线下门店</dt>
+						<dd>
+							<a href="#">小米之家</a>
+						</dd>
+						<dd>
+							<a href="#">服务网点</a>
+						</dd>
+						<dd>
+							<a href="#">零售网点</a>
+						</dd>
+					</dl>
+					<dl class="col-links">
+						<dt>关于小米</dt>
+						<dd>
+							<a href="#">了解小米</a>
+						</dd>
+						<dd>
+							<a href="#">加入小米</a>
+						</dd>
+						<dd>
+							<a href="#">联系我们</a>
+						</dd>
+					</dl>
+					<dl class="col-links">
+						<dt>关注我们</dt>
+						<dd>
+							<a href="#">新浪微博</a>
+						</dd>
+						<dd>
+							<a href="#">小米部落</a>
+						</dd>
+						<dd>
+							<a href="#">官方微信</a>
+						</dd>
+					</dl>
+					<dl class="col-links">
+						<dt>特色服务</dt>
+						<dd>
+							<a href="#">F 码通道</a>
+						</dd>
+						<dd>
+							<a href="#">小米移动</a>
+						</dd>
+						<dd>
+							<a href="#">防伪查询</a>
+						</dd>
+					</dl>
+					<div class="col-contact">
+						<p class="phone">400-100-5678</p>
+						<p>
+							<span style="">周一至周日 8:00-18:00</span>
+							<span style="display:none;">2月7日至13日服务时间 9:00-18:00</span>
+							<br>（仅收市话费）
+						</p>
+						<a class="btn btn-line-primary btn-small" href="#"><i class="iconfont">&#xe600;</i> 24小时在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="infos">
+			<div class="container">
+				<div class="logo ir">小米官网</div>
+				<div class="info-text">
+					<p class="sites">
+						<a href="#">小米商城</a><span>|</span>
+						<a href="#">MIUI</a> <span>|</span>
+						<a href="#">米聊</a><span>|</span>
+						<a href="#">多看书城</a><span>|</span>
+						<a href="#">小米路由器</a><span>|</span>
+						<a href="#">视频电话</a><span>|</span>
+						<a href="#">小米后院</a><span>|</span>
+						<a href="#">小米天猫店</a><span>|</span>
+						<a href="#">小米淘宝直营店</a><span>|</span>
+						<a href="#">小米网盟</a><span>|</span>
+						<a href="#">问题反馈</a><span>|</span>
+						<a href="#">Select Region</a>
+					</p>
+					<p>
+						<a href="#" title="mi.com">mi.com</a> 京ICP证110507号
+						<a href="#">京ICP备10046444号</a>
+						<a href="#">京公网安备11010802020134号 </a>
+						<a href="#">京网文[2014]0059-0009号</a><br>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+				</div>
+				<div class="info-links">
+					<a href="#"> <img src="img1/seal.png" alt=""></a>
+					<a href="#"> <img src="img1/v-logo-2.png" alt=""></a>
+					<a href="#"> <img src="img1/v-logo-1.png" alt=""></a>
+					<a href="#"> <img src="img1/v-logo-3.png" alt=""></a>
+				</div>
+			</div>
+			<div class="slogan ir">探索黑科技，小米为发烧而生</div>
+		</div>
+	</body>
+
+</html>

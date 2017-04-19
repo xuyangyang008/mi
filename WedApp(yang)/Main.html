@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			
+		}
+		#Logo
+		{		
+			position: absolute;				
+			width:1002px;
+			height:130px;
+			left: 200px;	
+			font-size: 13px;
+			color: white;
+			background:url(Images/hbg.jpg) ;								
+		}
+		#Logo div
+		{
+			position: absolute;
+			left: 700px;
+			top:30px						
+		}
+        #title
+       {
+        position:absolute;
+        top:90px;
+        left: 200px;
+	    width:1002px;
+		height:50px;				
+		background:#338300;
+       }	
+       #leftmenu
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 220px;
+       	 width: 25px;
+       	 height: 49px;
+       	 background:url(Images/menuleft.jpg) ;
+       	 z-index: 1;
+       }	
+        #rigthmenu
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 1160px;
+       	 width: 25px;
+       	 height: 49px;
+       	 background:url(Images/menuright.jpg) ;
+       	 z-index: 1;
+       }	
+        #menuMain
+       {
+       	 position:absolute;
+       	 top: 75px;;
+       	 left: 245px;
+       	 width: 915px;
+       	 height: 49px;
+       	 background:url(Images/menubg.jpg) ;
+       	 z-index: 1;
+       }	
+       #menutitle
+		{
+		
+		 z-index: 2;
+		 position: absolute;
+		 top: 80px;
+		 left:446px;
+		 width: 813px;
+		 height: 40px;
+		
+		 /*background: red;*/
+		}	
+		
+		 #menutitle a
+		 {
+			 text-decoration: none;
+			 background: url(Images/menu.jpg) no-repeat;
+			 width: 96px;
+			 height: 40px;
+			font-size: 13px;
+			 text-align: center;
+			 display:inline-block;
+			 line-height: 44px;
+			 color: white;			 	
+		 }
+		 
+		 #menutitle a:hover
+		 {
+		 	background-image: url(Images/menunow.jpg);
+		 }
+		 
+	#adv
+	{
+		position: absolute;
+		width:1002px ;
+		height: 200px;
+		left: 200px;
+		top:143px ;
+	}	
+	
+	       /*身体*/	
+	       /*产品*/
+	      #leftproduct
+	      {
+	      	position: absolute;
+	      	width: 200px;
+	      	height: 207px;
+	      	left: 200px;
+	      	top:343px;
+	      	background: url(Images/about.jpg);	      	
+	      }
+	       /*产品信息*/
+	      #lertpocinfo
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 60px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	      #lertpocinfo2
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 90px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	       #lertpocinfo3
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 125px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	         #lertpocinfo4
+	      {
+	      	position: absolute;
+	      	width: 128px;
+	      	height:20px;
+	      	top: 155px;
+	      	left:20px;
+	      	background: url(Images/dot1.jpg);      	      		      			
+	      }
+	       #leftproduct a
+	       {	       	 
+	       	position: absolute;
+	       	left: 23px;
+	       	font-size: 13px;
+	       	font-weight: 600;
+	       	text-decoration: none;
+	       	color: black;
+	       }
+	     	     
+	      
+	      /*联系*/
+	      #leftcontact
+	      {
+	      	position: absolute;
+	      	width: 200px;
+	      	height: 259px;
+	      	left: 200px;
+	      	top:550px ;
+	      	background: url(Images/contact.jpg);
+	      }
+	       /*联系内容*/
+	      #contxt
+	      {
+	      	z-index: 2;
+	      	position: absolute;	 
+	      	width:180px ;
+	      	height: 230px;     	
+	      	left: 10px;
+	      	top:60px;	      	
+	      }
+	      #contxt p
+	      {
+	      	font-size: 15px;
+	      	font-weight: 600;
+	      }
+	      
+	      /*填充*/
+	    #leftbck
+	    {
+	    	position: absolute;
+	    	width: 200px;
+	    	height: 150px;
+	    	left: 200px;
+	    	top: 809px;
+	    	background: #43A500;		    	
+	    }
+	    /*身体(上)*/
+	    #topMain
+	    {
+	    	position: absolute;
+	    	top: 344px;
+	    	left: 400px;
+	    	width: 575px;
+	    	height: 250px;
+	    	/*background: #43A500;*/
+	    }
+	    /*身体(公司简介)*/
+	   #company
+	   {
+	   	position: absolute;
+	   	width: 552px;
+	   	height: 19px;
+	   	left: 20px;
+	   	top: 20px;
+	   	background: url(Images/gsjs.jpg);
+	   }
+	    /*身体(more)*/
+	   #more
+	   {
+	   	position: absolute;
+	   	width: 33px;
+	   	height: 5px;
+	   	left: 495px;
+	   	top: 28px;
+	   	background: url(Images/more.jpg);
+	   }
+	   #move2
+	   {
+	   	position: absolute;
+	   	width: 45px;
+	   	height: 19px;
+	   	left: 528px;
+	   	top: 20px;
+	   	background: #44A700;
+	   }
+	   /*身体图片*/
+	   #house
+	   {
+	   	position: absolute;
+	   	width: 187px;
+	   	height: 143px;
+	   	left: 20px;
+	   	top: 59px;
+	   	background: url(Images/house.jpg);
+	   }
+	    /*身体信息*/
+	   #rightInfo
+	   {
+	   	position: absolute;
+	   	width: 355px;
+	   	height:145px;
+	   	top: 59px;
+	   	left: 230px;
+	   	font-size: 16px;
+	   	font-weight: 700;
+	   	 /*vertical-align:sub;*/
+	   }
+	    /*下划线*/
+	   #btmline
+	   {
+	   	position: absolute;
+	   	width: 550px;
+	   	height: 2px;
+	   	top: 240px;
+	   	left:20px ;
+	   	background: url(Images/btmline.jpg);
+	   }
+	   /*身体(中)*/
+	   #centerMain
+	   {
+	   	position: absolute;
+	   	top: 600px;
+	   	left: 400px;
+	   	width:575px;
+	   	height:200px ;
+	   
+	   }
+	   /*产品展示*/
+	    #pdt_title
+	   {
+	   	position: absolute;
+	   	width: 552px;
+	   	height: 19px;
+	   	left: 20px;
+	   	top: 200px;
+	   	background: url(Images/pdt_title.jpg);
+	   }
+	    #more_title
+	   {
+	   	position: absolute;
+	   	width: 33px;
+	   	height: 5px;
+	   	left: 495px;
+	   	top: 208px;
+	   	background: url(Images/more.jpg);
+	   }
+	   #more_title2
+	   {
+	   	position: absolute;
+	   	width: 45px;
+	   	height: 19px;
+	   	left: 528px;
+	   	top: 200px;
+	   	background: #44A700;
+	   }
+	  /* 身体（中）*/
+	   #bottomtext
+	   {
+	   	position: absolute;
+	   	width: 575px;
+	    height: 200px;
+	    left: 400px;
+	    top: 600px;    
+	   }
+	   #bottomtext span
+	   {
+	     display: block;
+	     padding-left: 20px;
+	     padding-bottom:20px;	 
+	     font-size: 14px;    
+	   }
+	   #bottomtext div
+	   {
+	   	float: right;     	  	
+	   }
+	   
+	 
+	   
+	   /* 身体（下）*/
+	   
+	   /*身体（大鲵介绍）*/
+	  #rightMain
+	  {
+	  	position: absolute;
+	  	width: 225px;
+	  	height: 319px;
+	  	left: 985px;
+	  	top: 357px;
+	  	background: url(Images/dyjs.jpg);
+	  }
+	   #rightMain div
+	   {
+	   	position: absolute;
+	   	top:55px;
+	   	left: 15px;
+	   	font-size: 14px;
+	   }
+	  /*身体（右:在先留言）*/
+	 #msg
+	 {
+	 	position: absolute;
+	 	width: 223px;
+	 	height: 66px;
+	 	left: 985px;
+	 	top:710px ;
+	 	background: url(Images/msg.jpg);
+	 }
+	 /*身体（右:服务热线）*/
+	#tel
+	{
+		position: absolute;
+		width: 196px;
+		height: 121px;
+		left: 985px;
+		top: 796px;
+		background: url(Images/tel.jpg);
+		
+	}
+	/*脚*/
+	#fool
+	{
+		position: absolute;
+		width: 1002px;
+		height: 93px;
+		left: 200px;
+		top: 960px;
+		background:url(Images/footer.jpg);
+	}
+	#toptxt
+	{
+		position: absolute;
+		left: 200px;
+		top: 50px;
+		color: white;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	#pdt
+	{
+		position: absolute;
+	}
+	
+	/*轮换*/
+	  #demo {
+				background: #FFF;
+				overflow: hidden;
+				border: 1px dashed #CCC;
+				width: 545px;	
+				
+				position: absolute;
+				left: 425px;
+				top: 820px;
+				height: 130px;									   	
+			}
+			
+			#demo img {
+				border: 3px solid #F2F2F2;
+			}
+			
+			#indemo {
+				float: left;
+				width: 800%;
+			}
+			
+			#demo1 {
+				float: left;
+			}
+			
+			#demo2 {
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="Logo">
+			<div>
+				<img src="Images/home.jpg">设为首页
+				<img src="Images/bookmark.jpg">加入收藏
+				<img src="Images/mail.jpg">联系我们
+			</div>		
+		</div>		
+		<div id="title"></div>
+		<div id="leftmenu"></div>
+		<div id="rigthmenu"></div>
+		<div id="menuMain"></div>
+		
+		<div id="menutitle">
+				<a href='index.html'>网站首页</a>
+				<a href='articleList/15.html'>公司简介</a>
+				<a href='productList/11.html'>产品展示</a>
+				<a href='articleList/17.html'>养殖技术</a>
+				<a href='articleList/18.html'>娃娃鱼介绍</a>
+				<a href='productList/18.html'>企业资质</a>
+				<a href='productList/19.html'>友情链接</a>
+		</div>
+		
+		<div id="adv">
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1002" height="193"  >
+          <param name="movie" value="Scripts/flashbcastr.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="" />
+          <param name="swfversion" value="8.0.35.0" />
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+          <param name="transparent" value="" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="Scripts/flashbcastr.swf" width="1002" height="200">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="" />
+            <param name="swfversion" value="8.0.35.0" />
+            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+            <param name="flashvars" value="bcastr_xml_url=Scripts/flashbcastr.xml" />
+            <param name="transparent" value="transparent" />
+            <div>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="��ȡ Adobe Flash Player" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object>
+  </div>
+		
+		<!--身体-->
+	<div id="Main">
+		<!--产品-->
+		<div id="leftproduct">
+			<div id="lertpocinfo">
+				<a href="#">成品大鲵</a>
+			</div>
+			<div id="lertpocinfo2">
+				<a href="#">鲵苗</a>
+			</div>
+			<div id="lertpocinfo3">
+				<a href="#">幼鲵</a>
+			</div>
+			<div id="lertpocinfo4">
+				<a href="#">种鲵</a>
+			</div>
+		</div>
+		<!--产品信息-->
+		
+		<!--联系-->
+		<div id="leftcontact">
+			<div id="contxt">
+				<p>地址：湖南省望城区茶亭镇洪开桥剑龙娃娃鱼养殖基地</p>
+                <p>电话：0731-88245889</p>
+                <p> 手机：13907486476 (谭先生)</p>
+                <p> 13808415437 (雷先生)</p>          
+                <p>QQ：1605461952</p>
+                <p>邮编：410203</p>
+                <p>邮箱：jlwwyu@163.com</p>                                   
+			</div>
+		</div>
+		<div id="leftbck"></div>
+		<!--身体（上）-->
+		<div id="topMain">
+			<div id="company"></div>
+			<!--身体(more)-->
+			<div id="more"></div>
+			<div id="move2"></div>
+			<div id="house"></div>
+			<div id="rightInfo">				
+               <p>&nbsp;&nbsp;长沙剑龙生物科技发展有限公司从2002年开</p>
+               <p>始从事大鲵的驯养繁殖事业，公司于2007年7月</p>
+               <p>10日正式注册成立，是一家专业从事大鲵（娃娃鱼）</p>
+               <p>驯养、繁殖、研究、开发、利用的农业高科</p>
+               <p>技水产企业，目前公司拥有员工16名,其中教授</p>
+               <p>级专家2名，水产养殖专业技术人员4人，专职养</p>
+               <p>鲵人员6人，生产管理人员...更多>></p>              
+			</div>
+			<!--下划线-->
+			<div id="btmline"></div>
+		</div>
+		<!--身体（中）-->
+		<div id="centerMain">
+			<div id="pdt_title"></div>
+			<div id="more_title"></div>
+			<div id="more_title2"></div>
+		</div>
+		<!--身体（中）-->
+		<div id="bottomtext">
+			<span><img src="Images/arrow.jpg" />娃娃鱼的烹饪（制作）方法<div>2012/7/29</div></span>
+			<span><img src="Images/arrow.jpg" />大鲵苗种质量鉴别技术<div>2012/3/10 </div></span>
+			<span><img src="Images/arrow.jpg" />大鲵（娃娃鱼）养殖基本技术要领<div>2012/3/10</div></span>
+			<span><img src="Images/arrow.jpg" /> 娃娃鱼主要病害及防治办法<div>2012/3/10</div></span>
+			<span><img src="Images/arrow.jpg" />大鲵的生态习性及人工养殖技术<div>2012/3/10 </div></span>
+			<!--轮换-->			
+		</div>
+		
+		<!--身体（右:大鲵介绍）-->
+		<div id="rightMain">
+			<div>
+			<p>大鲵俗称娃娃鱼，属两栖纲，</p>
+			<p>有尾目隐鳃鲵科，是3亿年前与恐</p>
+			<p>龙同一时代生存并延续下来的大</p>
+			<p>两栖动物，被称为研究生物进化</p>
+			<p>的“活化石”，属于国家二类保</p>
+			<p>护动型物，在营养美食、保健、</p>
+			<p>美容、医药、观赏、科学研究等</p>
+			<p>诸多方面均有极高的价值。 大鲵肉味鲜美，享</p>
+			<p>有“水中人参”和 “软黄金”之称，为</p>
+			<p>四海求之的珍品佳肴。在中国香</p>
+			<p>港、台湾地区...更多>></p>
+			</div>
+		</div>
+		<!--身体（右:在先留言）-->
+		<div id="msg"></div>
+		<!--身体（右:服务热线）-->
+		<div id="tel"></div>
+	</div>
+			
+		<!--脚-->
+		<div id="fool">
+			<div id="toptxt">
+				<span>公司掠影|新闻中心 | 版权声明 | 在线留言 | 技术支持</span>
+				<br />
+				<span>版权所有 Copyright ? 2012-2015 长沙剑龙生物科技发展有限公司 湘ICP备1200230 </span>
+				<img src="Images/chk_right.gif" />
+			</div>
+		</div>
+		
+		<!--轮换-->
+		<div id="demo">
+			<div id="indemo">
+			<div id="demo1">
+		    <a href="#"><img src="Images/p1.jpg" border="0" width="133px" height="120px" /></a>
+			<a href="#"><img src="Images/p2.jpg" border="0" width="133px" height="120px" /></a>
+			<a href="#"><img src="Images/p3.jpg" border="0" width="133px" height="120px" /></a>
+		    <a href="#"><img src="Images/p4.jpg" border="0" width="133px" height="120px" /></a>
+		    <a href="#"><img src="Images/p5.jpg" border="0" width="133px" height="120px" /></a>
+			<a href="#"><img src="Images/p6.jpg" border="0" width="133px" height="120px" /></a>				</div>
+			<div id="demo2"></div>
+			</div>
+			</div>
+		   
+
+          <script type="text/javascript">
+            var speed = 13; //数字越大速度越慢
+			var tab = document.getElementById("demo");
+			var tab1 = document.getElementById("demo1");
+			var tab2 = document.getElementById("demo2");
+			tab2.innerHTML = tab1.innerHTML;
+
+			function Marquee() {
+				if(tab2.offsetWidth - tab.scrollLeft <= 0)
+					tab.scrollLeft -= tab1.offsetWidth
+				else {
+					tab.scrollLeft++;
+				}
+			}
+			var MyMar = setInterval(Marquee, speed);
+			tab.onmouseover = function() {
+				clearInterval(MyMar)
+			};
+			tab.onmouseout = function() {
+				MyMar = setInterval(Marquee, speed)
+			};
+
+   	      </script>
+
+	</body>
+</html>
